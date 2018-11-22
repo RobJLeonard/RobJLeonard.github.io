@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({166:[function(require,module,exports) {
+})({144:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -330,7 +330,7 @@ var X = { Children: { map: function (a, b, e) {
   isValidElement: O, version: "16.6.0", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: K, assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default || Z;
-},{"object-assign":166}],14:[function(require,module,exports) {
+},{"object-assign":144}],16:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -338,7 +338,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":114}],177:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":114}],201:[function(require,module,exports) {
 /** @license React v16.6.0
  * scheduler.production.min.js
  *
@@ -359,7 +359,7 @@ exports.unstable_UserBlockingPriority=2;exports.unstable_NormalPriority=3;export
 exports.unstable_scheduleCallback=function(a,b){var d=-1!==h?h:exports.unstable_now();if("object"===typeof b&&null!==b&&"number"===typeof b.timeout)b=d+b.timeout;else switch(f){case 1:b=d+-1;break;case 2:b=d+250;break;case 4:b=d+1073741823;break;default:b=d+5E3}a={callback:a,priorityLevel:f,expirationTime:b,next:null,previous:null};if(null===c)c=a.next=a.previous=a,r();else{d=null;var e=c;do{if(e.expirationTime>b){d=e;break}e=e.next}while(e!==c);null===d?d=c:d===c&&(c=a,r());b=d.previous;b.next=d.previous=
 a;a.next=d;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)c=null;else{a===c&&(c=b);var d=a.previous;d.next=b;b.previous=d}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=f;return function(){var d=f,e=h;f=b;h=exports.unstable_now();try{return a.apply(this,arguments)}finally{f=d,h=e,x()}}};exports.unstable_getCurrentPriorityLevel=function(){return f};
 
-},{}],165:[function(require,module,exports) {
+},{}],143:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -367,7 +367,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/scheduler.development.js');
 }
-},{"./cjs/scheduler.production.min.js":177}],113:[function(require,module,exports) {
+},{"./cjs/scheduler.production.min.js":201}],113:[function(require,module,exports) {
 /** @license React v16.6.0
  * react-dom.production.min.js
  *
@@ -619,7 +619,7 @@ void 0:r("40");return a._reactRootContainer?(Ji(function(){Wi(null,null,a,!1,fun
 Pa,Qa,Ga.injectEventPluginsByName,sa,Wa,function(a){Ba(a,Va)},Wb,Xb,ee,Ia]},unstable_createRoot:function(a,b){Ui(a)?void 0:r("278");return new Ti(a,!0,null!=b&&!0===b.hydrate)}};(function(a){var b=a.findFiberByHostInstance;return Cf(n({},a,{findHostInstanceByFiber:function(a){a=Jd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Na,bundleType:0,version:"16.6.0",rendererPackageName:"react-dom"});
 var mj={default:Yi},nj=mj&&Yi||mj;module.exports=nj.default||nj;
 
-},{"react":14,"object-assign":166,"scheduler":165}],12:[function(require,module,exports) {
+},{"react":16,"object-assign":144,"scheduler":143}],12:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -655,7 +655,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":113}],161:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":113}],139:[function(require,module,exports) {
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -709,7 +709,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = warning;
-},{}],142:[function(require,module,exports) {
+},{}],138:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -756,7 +756,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
-},{}],167:[function(require,module,exports) {
+},{}],168:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -832,7 +832,7 @@ function resolvePathname(to) {
 }
 
 exports.default = resolvePathname;
-},{}],168:[function(require,module,exports) {
+},{}],169:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -880,7 +880,7 @@ function valueEqual(a, b) {
 }
 
 exports.default = valueEqual;
-},{}],127:[function(require,module,exports) {
+},{}],121:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -943,7 +943,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],126:[function(require,module,exports) {
+},{}],120:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1032,7 +1032,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":167,"value-equal":168,"./PathUtils":127}],159:[function(require,module,exports) {
+},{"resolve-pathname":168,"value-equal":169,"./PathUtils":121}],136:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1120,7 +1120,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":161}],160:[function(require,module,exports) {
+},{"warning":139}],137:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1178,7 +1178,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],123:[function(require,module,exports) {
+},{}],117:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1497,7 +1497,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":161,"invariant":142,"./LocationUtils":126,"./PathUtils":127,"./createTransitionManager":159,"./DOMUtils":160}],124:[function(require,module,exports) {
+},{"warning":139,"invariant":138,"./LocationUtils":120,"./PathUtils":121,"./createTransitionManager":136,"./DOMUtils":137}],118:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1831,7 +1831,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":161,"invariant":142,"./LocationUtils":126,"./PathUtils":127,"./createTransitionManager":159,"./DOMUtils":160}],125:[function(require,module,exports) {
+},{"warning":139,"invariant":138,"./LocationUtils":120,"./PathUtils":121,"./createTransitionManager":136,"./DOMUtils":137}],119:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2015,7 +2015,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":161,"./PathUtils":127,"./LocationUtils":126,"./createTransitionManager":159}],16:[function(require,module,exports) {
+},{"warning":139,"./PathUtils":121,"./LocationUtils":120,"./createTransitionManager":136}],14:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2070,7 +2070,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.createBrowserHistory = _createBrowserHistory3.default;
 exports.createHashHistory = _createHashHistory3.default;
 exports.createMemoryHistory = _createMemoryHistory3.default;
-},{"./createBrowserHistory":123,"./createHashHistory":124,"./createMemoryHistory":125,"./LocationUtils":126,"./PathUtils":127}],136:[function(require,module,exports) {
+},{"./createBrowserHistory":117,"./createHashHistory":118,"./createMemoryHistory":119,"./LocationUtils":120,"./PathUtils":121}],185:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2082,7 +2082,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.prototype.constructor = subClass;
   subClass.__proto__ = superClass;
 }
-},{}],157:[function(require,module,exports) {
+},{}],243:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2119,7 +2119,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],158:[function(require,module,exports) {
+},{}],244:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2173,7 +2173,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],156:[function(require,module,exports) {
+},{}],242:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2187,7 +2187,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],149:[function(require,module,exports) {
+},{}],186:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2247,7 +2247,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"fbjs/lib/emptyFunction":157,"fbjs/lib/invariant":158,"./lib/ReactPropTypesSecret":156}],135:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":243,"fbjs/lib/invariant":244,"./lib/ReactPropTypesSecret":242}],145:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2271,7 +2271,7 @@ if ('production' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithThrowingShims":149}],133:[function(require,module,exports) {
+},{"./factoryWithThrowingShims":186}],183:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2296,7 +2296,7 @@ var storeShape = exports.storeShape = _propTypes2.default.shape({
   dispatch: _propTypes2.default.func.isRequired,
   getState: _propTypes2.default.func.isRequired
 });
-},{"prop-types":135}],134:[function(require,module,exports) {
+},{"prop-types":145}],184:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2325,7 +2325,7 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-},{}],130:[function(require,module,exports) {
+},{}],140:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2415,7 +2415,7 @@ function createProvider(storeKey) {
   return Provider;
 }
 exports.default = createProvider();
-},{"@babel/runtime/helpers/esm/inheritsLoose":136,"react":14,"prop-types":135,"../utils/PropTypes":133,"../utils/warning":134}],138:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/inheritsLoose":185,"react":16,"prop-types":145,"../utils/PropTypes":183,"../utils/warning":184}],212:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2429,7 +2429,7 @@ function _assertThisInitialized(self) {
 
   return self;
 }
-},{}],139:[function(require,module,exports) {
+},{}],213:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2453,7 +2453,7 @@ function _extends() {
 
   return _extends.apply(this, arguments);
 }
-},{}],140:[function(require,module,exports) {
+},{}],214:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2474,7 +2474,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
   return target;
 }
-},{}],199:[function(require,module,exports) {
+},{}],251:[function(require,module,exports) {
 /** @license React v16.6.0
  * react-is.production.min.js
  *
@@ -2490,7 +2490,7 @@ var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):601
 exports.StrictMode=f;exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===l||a===g||a===f||a===n||"object"===typeof a&&null!==a&&(a.$$typeof===r||a.$$typeof===q||a.$$typeof===h||a.$$typeof===k||a.$$typeof===m)};exports.isAsyncMode=function(a){return u(a)};exports.isConcurrentMode=u;exports.isContextConsumer=function(a){return t(a)===k};exports.isContextProvider=function(a){return t(a)===h};
 exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return t(a)===m};exports.isFragment=function(a){return t(a)===e};exports.isProfiler=function(a){return t(a)===g};exports.isPortal=function(a){return t(a)===d};exports.isStrictMode=function(a){return t(a)===f};
 
-},{}],143:[function(require,module,exports) {
+},{}],216:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -2498,7 +2498,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react-is.development.js');
 }
-},{"./cjs/react-is.production.min.js":199}],141:[function(require,module,exports) {
+},{"./cjs/react-is.production.min.js":251}],215:[function(require,module,exports) {
 'use strict';
 
 var _ReactIs$ForwardRef;
@@ -2581,7 +2581,7 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 
 module.exports = hoistNonReactStatics;
 
-},{"react-is":143,"react":14}],137:[function(require,module,exports) {
+},{"react-is":216,"react":16}],211:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2675,7 +2675,7 @@ function () {
 }();
 
 exports.default = Subscription;
-},{}],131:[function(require,module,exports) {
+},{}],141:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3001,7 +3001,7 @@ _ref) {
     return (0, _hoistNonReactStatics2.default)(Connect, WrappedComponent);
   };
 }
-},{"@babel/runtime/helpers/esm/inheritsLoose":136,"@babel/runtime/helpers/esm/assertThisInitialized":138,"@babel/runtime/helpers/esm/extends":139,"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":140,"hoist-non-react-statics":141,"invariant":142,"react":14,"react-is":143,"../utils/Subscription":137,"../utils/PropTypes":133}],144:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/inheritsLoose":185,"@babel/runtime/helpers/esm/assertThisInitialized":212,"@babel/runtime/helpers/esm/extends":213,"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":214,"hoist-non-react-statics":215,"invariant":138,"react":16,"react-is":216,"../utils/Subscription":211,"../utils/PropTypes":183}],217:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3037,7 +3037,7 @@ function shallowEqual(objA, objB) {
 
   return true;
 }
-},{}],217:[function(require,module,exports) {
+},{}],210:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3061,7 +3061,7 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
-},{}],175:[function(require,module,exports) {
+},{}],182:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -3092,7 +3092,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2.default)(root);
 exports.default = result;
-},{"./ponyfill.js":217}],120:[function(require,module,exports) {
+},{"./ponyfill.js":210}],122:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3736,7 +3736,7 @@ exports.bindActionCreators = bindActionCreators;
 exports.applyMiddleware = applyMiddleware;
 exports.compose = compose;
 exports.__DO_NOT_USE__ActionTypes = ActionTypes;
-},{"symbol-observable":175}],261:[function(require,module,exports) {
+},{"symbol-observable":182}],275:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3757,7 +3757,7 @@ function isPlainObject(obj) {
 
   return Object.getPrototypeOf(obj) === proto;
 }
-},{}],216:[function(require,module,exports) {
+},{}],265:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3780,7 +3780,7 @@ function verifyPlainObject(value, displayName, methodName) {
     (0, _warning2.default)(methodName + "() in " + displayName + " must return a plain object. Instead received " + value + ".");
   }
 }
-},{"./isPlainObject":261,"./warning":134}],210:[function(require,module,exports) {
+},{"./isPlainObject":275,"./warning":184}],260:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3859,7 +3859,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
     return proxy;
   };
 }
-},{"../utils/verifyPlainObject":216}],145:[function(require,module,exports) {
+},{"../utils/verifyPlainObject":265}],218:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3889,7 +3889,7 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
   }) : undefined;
 }
 exports.default = [whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject];
-},{"redux":120,"./wrapMapToProps":210}],146:[function(require,module,exports) {
+},{"redux":122,"./wrapMapToProps":260}],219:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3909,7 +3909,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
   }) : undefined;
 }
 exports.default = [whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing];
-},{"./wrapMapToProps":210}],147:[function(require,module,exports) {
+},{"./wrapMapToProps":260}],220:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3964,7 +3964,7 @@ function whenMergePropsIsOmitted(mergeProps) {
   } : undefined;
 }
 exports.default = [whenMergePropsIsFunction, whenMergePropsIsOmitted];
-},{"@babel/runtime/helpers/esm/extends":139,"../utils/verifyPlainObject":216}],250:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":213,"../utils/verifyPlainObject":265}],267:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3993,7 +3993,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
   verify(mapDispatchToProps, 'mapDispatchToProps', displayName);
   verify(mergeProps, 'mergeProps', displayName);
 }
-},{"../utils/warning":134}],148:[function(require,module,exports) {
+},{"../utils/warning":184}],221:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4098,7 +4098,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
   var selectorFactory = options.pure ? pureFinalPropsSelectorFactory : impureFinalPropsSelectorFactory;
   return selectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
 }
-},{"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":140,"./verifySubselectors":250}],132:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":214,"./verifySubselectors":267}],142:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4230,7 +4230,7 @@ function createConnect(_temp) {
   };
 }
 exports.default = createConnect();
-},{"@babel/runtime/helpers/esm/extends":139,"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":140,"../components/connectAdvanced":131,"../utils/shallowEqual":144,"./mapDispatchToProps":145,"./mapStateToProps":146,"./mergeProps":147,"./selectorFactory":148}],117:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":213,"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":214,"../components/connectAdvanced":141,"../utils/shallowEqual":217,"./mapDispatchToProps":218,"./mapStateToProps":219,"./mergeProps":220,"./selectorFactory":221}],126:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4256,7 +4256,7 @@ exports.Provider = _Provider2.default;
 exports.createProvider = _Provider.createProvider;
 exports.connectAdvanced = _connectAdvanced2.default;
 exports.connect = _connect2.default;
-},{"./components/Provider":130,"./components/connectAdvanced":131,"./connect/connect":132}],211:[function(require,module,exports) {
+},{"./components/Provider":140,"./components/connectAdvanced":141,"./connect/connect":142}],252:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -4547,7 +4547,7 @@ exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
 exports.default = _RewireAPI__;
-},{}],260:[function(require,module,exports) {
+},{}],192:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -4608,7 +4608,7 @@ if (__DEV__) {
 }
 
 module.exports = warning;
-},{}],268:[function(require,module,exports) {
+},{}],236:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4751,7 +4751,7 @@ Router.childContextTypes = {
 };
 
 exports.default = Router;
-},{"warning":260,"invariant":142,"react":14,"prop-types":135}],265:[function(require,module,exports) {
+},{"warning":192,"invariant":138,"react":16,"prop-types":145}],202:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4835,7 +4835,7 @@ MemoryRouter.propTypes = {
 };
 
 exports.default = MemoryRouter;
-},{"warning":260,"react":14,"prop-types":135,"history":16,"./Router":268}],264:[function(require,module,exports) {
+},{"warning":192,"react":16,"prop-types":145,"history":14,"./Router":236}],235:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4942,12 +4942,12 @@ Prompt.contextTypes = {
 };
 
 exports.default = Prompt;
-},{"react":14,"prop-types":135,"invariant":142}],276:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"invariant":138}],274:[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],273:[function(require,module,exports) {
+},{}],268:[function(require,module,exports) {
 var isarray = require('isarray')
 
 /**
@@ -5375,7 +5375,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":276}],270:[function(require,module,exports) {
+},{"isarray":274}],239:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5423,7 +5423,7 @@ var generatePath = function generatePath() {
 };
 
 exports.default = generatePath;
-},{"path-to-regexp":273}],266:[function(require,module,exports) {
+},{"path-to-regexp":268}],233:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5579,7 +5579,7 @@ Redirect.contextTypes = {
 };
 
 exports.default = Redirect;
-},{"react":14,"prop-types":135,"warning":260,"invariant":142,"history":16,"./generatePath":270}],263:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"warning":192,"invariant":138,"history":14,"./generatePath":239}],240:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5661,7 +5661,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":273}],267:[function(require,module,exports) {
+},{"path-to-regexp":268}],234:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5842,7 +5842,7 @@ Route.childContextTypes = {
 };
 
 exports.default = Route;
-},{"warning":260,"invariant":142,"react":14,"prop-types":135,"./matchPath":263}],269:[function(require,module,exports) {
+},{"warning":192,"invariant":138,"react":16,"prop-types":145,"./matchPath":240}],237:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6039,7 +6039,7 @@ StaticRouter.childContextTypes = {
 };
 
 exports.default = StaticRouter;
-},{"warning":260,"invariant":142,"react":14,"prop-types":135,"history":16,"./Router":268}],262:[function(require,module,exports) {
+},{"warning":192,"invariant":138,"react":16,"prop-types":145,"history":14,"./Router":236}],238:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6150,7 +6150,7 @@ Switch.propTypes = {
 };
 
 exports.default = Switch;
-},{"react":14,"prop-types":135,"warning":260,"invariant":142,"./matchPath":263}],176:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"warning":192,"invariant":138,"./matchPath":240}],146:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -6220,7 +6220,7 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 
 module.exports = hoistNonReactStatics;
 
-},{}],271:[function(require,module,exports) {
+},{}],248:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6288,7 +6288,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"react":14,"prop-types":135,"hoist-non-react-statics":176,"./Route":267}],249:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"hoist-non-react-statics":146,"./Route":234}],271:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6348,7 +6348,7 @@ exports.Switch = _Switch3.default;
 exports.generatePath = _generatePath3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./MemoryRouter":265,"./Prompt":264,"./Redirect":266,"./Route":267,"./Router":268,"./StaticRouter":269,"./Switch":262,"./generatePath":270,"./matchPath":263,"./withRouter":271}],212:[function(require,module,exports) {
+},{"./MemoryRouter":202,"./Prompt":235,"./Redirect":233,"./Route":234,"./Router":236,"./StaticRouter":237,"./Switch":238,"./generatePath":239,"./matchPath":240,"./withRouter":248}],253:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -6759,7 +6759,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"react":14,"prop-types":135,"react-redux":117,"react-router":249,"./actions":211}],213:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"react-redux":126,"react-router":271,"./actions":252}],254:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7053,7 +7053,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"./actions":211}],214:[function(require,module,exports) {
+},{"./actions":252}],255:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7325,7 +7325,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"./actions":211}],215:[function(require,module,exports) {
+},{"./actions":252}],256:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7609,7 +7609,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"react-router":249}],173:[function(require,module,exports) {
+},{"react-router":271}],190:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7910,7 +7910,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"./actions":211,"./ConnectedRouter":212,"./reducer":213,"./middleware":214,"./selectors":215}],218:[function(require,module,exports) {
+},{"./actions":252,"./ConnectedRouter":253,"./reducer":254,"./middleware":255,"./selectors":256}],246:[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -8170,7 +8170,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{}],219:[function(require,module,exports) {
+},{}],247:[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -8446,7 +8446,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{}],174:[function(require,module,exports) {
+},{}],191:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -8728,7 +8728,7 @@ exports.__Rewire__ = _set__;
 exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
-},{"./getIn":218,"./setIn":219}],118:[function(require,module,exports) {
+},{"./getIn":246,"./setIn":247}],123:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -8991,7 +8991,7 @@ exports.__set__ = _set__;
 exports.__ResetDependency__ = _reset__;
 exports.__RewireAPI__ = _RewireAPI__;
 exports.default = _RewireAPI__;
-},{"./createAll":173,"./structure/plain":174}],119:[function(require,module,exports) {
+},{"./createAll":190,"./structure/plain":191}],127:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -9233,7 +9233,7 @@ exports.withTheme = withTheme;
 exports.channel = channel;
 exports.contextTypes = contextTypes;
 exports.createBroadcast = createBroadcast;
-},{"prop-types":135,"react":14,"hoist-non-react-statics":176}],234:[function(require,module,exports) {
+},{"prop-types":145,"react":16,"hoist-non-react-statics":146}],162:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9247,7 +9247,7 @@ var _Router2 = _interopRequireDefault(_Router);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Router":268}],226:[function(require,module,exports) {
+},{"react-router/es/Router":236}],154:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9331,7 +9331,7 @@ BrowserRouter.propTypes = {
 };
 
 exports.default = BrowserRouter;
-},{"warning":260,"react":14,"prop-types":135,"history":16,"./Router":234}],227:[function(require,module,exports) {
+},{"warning":192,"react":16,"prop-types":145,"history":14,"./Router":162}],155:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9414,7 +9414,7 @@ HashRouter.propTypes = {
 };
 
 exports.default = HashRouter;
-},{"warning":260,"react":14,"prop-types":135,"history":16,"./Router":234}],228:[function(require,module,exports) {
+},{"warning":192,"react":16,"prop-types":145,"history":14,"./Router":162}],156:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9558,7 +9558,7 @@ Link.contextTypes = {
 };
 
 exports.default = Link;
-},{"react":14,"prop-types":135,"invariant":142,"history":16}],229:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"invariant":138,"history":14}],157:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9572,7 +9572,7 @@ var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/MemoryRouter":265}],233:[function(require,module,exports) {
+},{"react-router/es/MemoryRouter":202}],161:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9586,7 +9586,7 @@ var _Route2 = _interopRequireDefault(_Route);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Route":267}],230:[function(require,module,exports) {
+},{"react-router/es/Route":234}],158:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9696,7 +9696,7 @@ NavLink.defaultProps = {
 };
 
 exports.default = NavLink;
-},{"react":14,"prop-types":135,"./Route":233,"./Link":228}],231:[function(require,module,exports) {
+},{"react":16,"prop-types":145,"./Route":161,"./Link":156}],159:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9710,7 +9710,7 @@ var _Prompt2 = _interopRequireDefault(_Prompt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Prompt":264}],232:[function(require,module,exports) {
+},{"react-router/es/Prompt":235}],160:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9724,7 +9724,7 @@ var _Redirect2 = _interopRequireDefault(_Redirect);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Redirect":266}],235:[function(require,module,exports) {
+},{"react-router/es/Redirect":233}],163:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9738,7 +9738,7 @@ var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/StaticRouter":269}],236:[function(require,module,exports) {
+},{"react-router/es/StaticRouter":237}],164:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9752,7 +9752,7 @@ var _Switch2 = _interopRequireDefault(_Switch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Switch":262}],237:[function(require,module,exports) {
+},{"react-router/es/Switch":238}],165:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9766,7 +9766,7 @@ var _generatePath2 = _interopRequireDefault(_generatePath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _generatePath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/generatePath":270}],238:[function(require,module,exports) {
+},{"react-router/es/generatePath":239}],166:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9780,7 +9780,7 @@ var _matchPath2 = _interopRequireDefault(_matchPath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/matchPath":263}],239:[function(require,module,exports) {
+},{"react-router/es/matchPath":240}],167:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9794,7 +9794,7 @@ var _withRouter2 = _interopRequireDefault(_withRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/withRouter":271}],155:[function(require,module,exports) {
+},{"react-router/es/withRouter":248}],135:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9874,7 +9874,7 @@ exports.Switch = _Switch3.default;
 exports.generatePath = _generatePath3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./BrowserRouter":226,"./HashRouter":227,"./Link":228,"./MemoryRouter":229,"./NavLink":230,"./Prompt":231,"./Redirect":232,"./Route":233,"./Router":234,"./StaticRouter":235,"./Switch":236,"./generatePath":237,"./matchPath":238,"./withRouter":239}],277:[function(require,module,exports) {
+},{"./BrowserRouter":154,"./HashRouter":155,"./Link":156,"./MemoryRouter":157,"./NavLink":158,"./Prompt":159,"./Redirect":160,"./Route":161,"./Router":162,"./StaticRouter":163,"./Switch":164,"./generatePath":165,"./matchPath":166,"./withRouter":167}],277:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9890,7 +9890,7 @@ function memoize(fn) {
 
 exports.default = memoize;
 //# sourceMappingURL=index.es.js.map
-},{}],279:[function(require,module,exports) {
+},{}],278:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9943,7 +9943,7 @@ var index = {
 
 exports.default = index;
 //# sourceMappingURL=index.es.js.map
-},{}],278:[function(require,module,exports) {
+},{}],279:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9987,7 +9987,7 @@ function murmurhash2_32_gc(str) {
 
 exports.default = murmurhash2_32_gc;
 //# sourceMappingURL=index.es.js.map
-},{}],280:[function(require,module,exports) {
+},{}],276:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10620,7 +10620,7 @@ function stylis_min(W) {
 }
 
 exports.default = stylis_min;
-},{}],281:[function(require,module,exports) {
+},{}],280:[function(require,module,exports) {
 var define;
 (function (factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
@@ -10671,7 +10671,7 @@ var define;
 	}
 }))
 
-},{}],274:[function(require,module,exports) {
+},{}],225:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11213,7 +11213,7 @@ function createEmotion(context, options) {
 }
 
 exports.default = createEmotion;
-},{"@emotion/memoize":277,"@emotion/unitless":279,"@emotion/hash":278,"@emotion/stylis":280,"stylis-rule-sheet":281}],244:[function(require,module,exports) {
+},{"@emotion/memoize":277,"@emotion/unitless":278,"@emotion/hash":279,"@emotion/stylis":276,"stylis-rule-sheet":280}],171:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -11252,7 +11252,7 @@ exports.keyframes = keyframes;
 exports.css = css;
 exports.sheet = sheet;
 exports.caches = caches;
-},{"create-emotion":274}],272:[function(require,module,exports) {
+},{"create-emotion":225}],273:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11270,7 +11270,7 @@ var index = (0, _memoize2.default)(RegExp.prototype.test.bind(reactPropsRegex));
 
 exports.default = index;
 //# sourceMappingURL=index.es.js.map
-},{"@emotion/memoize":277}],245:[function(require,module,exports) {
+},{"@emotion/memoize":277}],250:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11506,7 +11506,7 @@ function createEmotionStyled(emotion, view) {
 }
 
 exports.default = createEmotionStyled;
-},{"prop-types":135,"@emotion/is-prop-valid":272}],186:[function(require,module,exports) {
+},{"prop-types":145,"@emotion/is-prop-valid":273}],189:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11542,7 +11542,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var index = (0, _createEmotionStyled2.default)(emotion, _react2.default);
 
 exports.default = index;
-},{"react":14,"emotion":244,"create-emotion-styled":245}],164:[function(require,module,exports) {
+},{"react":16,"emotion":171,"create-emotion-styled":250}],151:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11556,7 +11556,7 @@ var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _reactEmotion2.default;
-},{"react-emotion":186}],153:[function(require,module,exports) {
+},{"react-emotion":189}],133:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11600,7 +11600,7 @@ var Wrapper = /*#__PURE__*/(0, _styled2.default)('div', {
     return props.theme.fonts.body;
 });
 var templateObject_1;
-},{"react":14,"../../utils/styled":164}],257:[function(require,module,exports) {
+},{"react":16,"../../utils/styled":151}],266:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11782,7 +11782,7 @@ exports.getType = getType;
 exports.isOfType = isOfType;
 exports.isActionOf = isActionOf;
 exports.createActionDeprecated = createActionDeprecated;
-},{}],242:[function(require,module,exports) {
+},{}],232:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11798,7 +11798,7 @@ var LayoutActionTypes = exports.LayoutActionTypes = undefined;
 (function (LayoutActionTypes) {
     LayoutActionTypes["SET_THEME"] = "@@layout/SET_THEME";
 })(LayoutActionTypes || (exports.LayoutActionTypes = LayoutActionTypes = {}));
-},{}],240:[function(require,module,exports) {
+},{}],230:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11819,7 +11819,7 @@ var _types = require('./types');
 var setTheme = exports.setTheme = function setTheme(theme) {
   return (0, _typesafeActions.action)(_types.LayoutActionTypes.SET_THEME, theme);
 };
-},{"typesafe-actions":257,"./types":242}],252:[function(require,module,exports) {
+},{"typesafe-actions":266,"./types":232}],170:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11911,7 +11911,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 // Now let's connect our component!
 // With redux v4's improved typings, we can finally omit generics here.
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(LayoutContainer);
-},{"react":14,"react-redux":117,"../store/layout/actions":240}],163:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"../store/layout/actions":230}],150:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11949,7 +11949,7 @@ var Container = /*#__PURE__*/(0, _styled2.default)('div', {
 exports.default = Container;
 
 var templateObject_1;
-},{"../../utils/styled":164}],154:[function(require,module,exports) {
+},{"../../utils/styled":151}],134:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12048,7 +12048,7 @@ var ThemeSwitcherButton = /*#__PURE__*/(0, _styled2.default)('button', {
     return props.theme.colors.white;
 });
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10;
-},{"react":14,"react-router-dom":155,"../../utils/styled":164,"../../containers/LayoutContainer":252,"./Container":163,"emotion":244}],162:[function(require,module,exports) {
+},{"react":16,"react-router-dom":135,"../../utils/styled":151,"../../containers/LayoutContainer":170,"./Container":150,"emotion":171}],149:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12078,7 +12078,7 @@ var Page = /*#__PURE__*/(0, _styled2.default)('div', {
 exports.default = Page;
 
 var templateObject_1;
-},{"../../utils/styled":164}],150:[function(require,module,exports) {
+},{"../../utils/styled":151}],131:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12128,7 +12128,7 @@ var PageContent = /*#__PURE__*/(0, _styled2.default)('article', {
     return props.theme.fonts.headings;
 });
 var templateObject_1;
-},{"react":14,"../components/layout/Page":162,"../components/layout/Container":163,"../utils/styled":164}],208:[function(require,module,exports) {
+},{"react":16,"../components/layout/Page":149,"../components/layout/Container":150,"../utils/styled":151}],207:[function(require,module,exports) {
 var define;
 var global = arguments[3];
 //! moment.js
@@ -16638,7 +16638,7 @@ var global = arguments[3];
 
 })));
 
-},{}],201:[function(require,module,exports) {
+},{}],203:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16690,7 +16690,7 @@ var Wrapper = /*#__PURE__*/(0, _styled2.default)('table', {
     return props.theme.colors.tableOdd;
 });
 var templateObject_1;
-},{"react":14,"../../utils/styled":164}],251:[function(require,module,exports) {
+},{"react":16,"../../utils/styled":151}],272:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16705,7 +16705,7 @@ function _taggedTemplateLiteralLoose(strings, raw) {
   strings.raw = raw;
   return strings;
 }
-},{}],205:[function(require,module,exports) {
+},{}],223:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20068,7 +20068,7 @@ exports.transitions = transitions;
 exports.transparentize = curriedTransparentize;
 exports.triangle = triangle;
 exports.wordWrap = wordWrap;
-},{"@babel/runtime/helpers/esm/extends":139,"@babel/runtime/helpers/esm/taggedTemplateLiteralLoose":251}],202:[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":213,"@babel/runtime/helpers/esm/taggedTemplateLiteralLoose":272}],204:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20100,7 +20100,7 @@ var LoadingOverlay = /*#__PURE__*/(0, _styled2.default)('div', {
 exports.default = LoadingOverlay;
 
 var templateObject_1;
-},{"../../utils/styled":164,"polished":205}],203:[function(require,module,exports) {
+},{"../../utils/styled":151,"polished":223}],205:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20128,7 +20128,7 @@ var LoadingOverlayInner = /*#__PURE__*/(0, _styled2.default)('div', {
 exports.default = LoadingOverlayInner;
 
 var templateObject_1;
-},{"../../utils/styled":164}],204:[function(require,module,exports) {
+},{"../../utils/styled":151}],206:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20170,7 +20170,7 @@ var Spinner = /*#__PURE__*/(0, _styled2.default)('div', {
     return props.theme.colors.brand;
 }, CubeMove, CubeMove);
 var templateObject_1, templateObject_2;
-},{"react":14,"react-emotion":186,"../../utils/styled":164}],243:[function(require,module,exports) {
+},{"react":16,"react-emotion":189,"../../utils/styled":151}],229:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20192,7 +20192,7 @@ var TeamsActionTypes = exports.TeamsActionTypes = undefined;
     TeamsActionTypes["SELECTED"] = "@@teams/SELECTED";
     TeamsActionTypes["CLEAR_SELECTED"] = "@@teams/CLEAR_SELECTED";
 })(TeamsActionTypes || (exports.TeamsActionTypes = TeamsActionTypes = {}));
-},{}],209:[function(require,module,exports) {
+},{}],208:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20227,7 +20227,7 @@ var selectTeam = exports.selectTeam = function selectTeam(team_id) {
 var teamSelected = exports.teamSelected = function teamSelected(team) {
   return (0, _typesafeActions.action)(_types.TeamsActionTypes.SELECTED, team);
 };
-},{"typesafe-actions":257,"./types":243}],171:[function(require,module,exports) {
+},{"typesafe-actions":266,"./types":229}],147:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20373,7 +20373,7 @@ var TeamName = /*#__PURE__*/(0, _styled2.default)('div', {
     return props.theme.colors.brand;
 });
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
-},{"react":14,"react-router-dom":155,"react-redux":117,"moment":208,"../../utils/styled":164,"../../components/layout/Page":162,"../../components/layout/Container":163,"../../components/layout/DataTable":201,"../../components/data/LoadingOverlay":202,"../../components/data/LoadingOverlayInner":203,"../../components/data/LoadingSpinner":204,"../../store/teams/actions":209}],172:[function(require,module,exports) {
+},{"react":16,"react-router-dom":135,"react-redux":126,"moment":207,"../../utils/styled":151,"../../components/layout/Page":149,"../../components/layout/Container":150,"../../components/layout/DataTable":203,"../../components/data/LoadingOverlay":204,"../../components/data/LoadingOverlayInner":205,"../../components/data/LoadingSpinner":206,"../../store/teams/actions":208}],148:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20571,7 +20571,7 @@ var PlayerName = /*#__PURE__*/(0, _styled2.default)('div', {
     return props.theme.colors.brand;
 });
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15;
-},{"react":14,"react-redux":117,"../../utils/styled":164,"../../components/layout/Page":162,"../../components/layout/Container":163,"../../components/data/LoadingOverlay":202,"../../components/data/LoadingOverlayInner":203,"../../components/data/LoadingSpinner":204,"../../store/teams/actions":209,"../../../node_modules/polished":205,"../../components/layout/DataTable":201}],151:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"../../utils/styled":151,"../../components/layout/Page":149,"../../components/layout/Container":150,"../../components/data/LoadingOverlay":204,"../../components/data/LoadingOverlayInner":205,"../../components/data/LoadingSpinner":206,"../../store/teams/actions":208,"../../../node_modules/polished":223,"../../components/layout/DataTable":203}],130:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20642,7 +20642,7 @@ var mapStateToProps = function mapStateToProps(_a) {
 // Now let's connect our component!
 // With redux v4's improved typings, we can finally omit generics here.
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(TeamsPage);
-},{"react":14,"react-redux":117,"react-router-dom":155,"./teams/index":171,"./teams/show":172}],222:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"react-router-dom":135,"./teams/index":147,"./teams/show":148}],258:[function(require,module,exports) {
 var global = arguments[3];
 var define;
 /*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -21179,7 +21179,7 @@ var define;
 
 }(this));
 
-},{}],220:[function(require,module,exports) {
+},{}],257:[function(require,module,exports) {
 'use strict';
 
 module.exports = {
@@ -21197,7 +21197,7 @@ module.exports = {
   }
 };
 
-},{}],258:[function(require,module,exports) {
+},{}],269:[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -21286,7 +21286,7 @@ module.exports = function (qs, sep, eq, options) {
 var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
-},{}],259:[function(require,module,exports) {
+},{}],270:[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -21370,12 +21370,12 @@ var objectKeys = Object.keys || function (obj) {
   }
   return res;
 };
-},{}],221:[function(require,module,exports) {
+},{}],259:[function(require,module,exports) {
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
-},{"./decode":258,"./encode":259}],200:[function(require,module,exports) {
+},{"./decode":269,"./encode":270}],222:[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -22109,7 +22109,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"punycode":222,"./util":220,"querystring":221}],247:[function(require,module,exports) {
+},{"punycode":258,"./util":257,"querystring":259}],241:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22125,7 +22125,7 @@ var IUsersActionTypes = exports.IUsersActionTypes = undefined;
     IUsersActionTypes["FETCH_FRIENDS_SUCCESS"] = "@@users/FETCH_FRIENDS_SUCCESS";
     IUsersActionTypes["FETCH_ERROR"] = "@@users/FETCH_ERROR";
 })(IUsersActionTypes || (exports.IUsersActionTypes = IUsersActionTypes = {}));
-},{}],206:[function(require,module,exports) {
+},{}],224:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22160,7 +22160,7 @@ var fetchFriendsSuccess = exports.fetchFriendsSuccess = function fetchFriendsSuc
 var fetchError = exports.fetchError = function fetchError(message) {
   return (0, _typesafeActions.action)(_types.IUsersActionTypes.FETCH_ERROR, message);
 };
-},{"typesafe-actions":257,"./types":247}],169:[function(require,module,exports) {
+},{"typesafe-actions":266,"./types":241}],152:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22470,7 +22470,7 @@ var UserLoading = /*#__PURE__*/(0, _styled2.default)('tr', {
     target: "e17mm77v6"
 })(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  td {\n    height: 48px;\n    text-align: center;\n  }\n"], ["\n  td {\n    height: 48px;\n    text-align: center;\n  }\n"])));
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
-},{"react":14,"react-router-dom":155,"react-redux":117,"url":200,"../../utils/styled":164,"../../components/layout/Page":162,"../../components/layout/Container":163,"../../components/layout/DataTable":201,"../../components/data/LoadingOverlay":202,"../../components/data/LoadingOverlayInner":203,"../../components/data/LoadingSpinner":204,"../../store/users/actions":206,"polished":205}],170:[function(require,module,exports) {
+},{"react":16,"react-router-dom":135,"react-redux":126,"url":222,"../../utils/styled":151,"../../components/layout/Page":149,"../../components/layout/Container":150,"../../components/layout/DataTable":203,"../../components/data/LoadingOverlay":204,"../../components/data/LoadingOverlayInner":205,"../../components/data/LoadingSpinner":206,"../../store/users/actions":224,"polished":223}],153:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22670,7 +22670,7 @@ var Bullet = /*#__PURE__*/(0, _styled2.default)('div', {
     return props.theme.colors.attrs[props.attr];
 });
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12;
-},{"react":14,"react-redux":117,"../../components/layout/Page":162,"../../components/layout/Container":163,"../../store/users/actions":206,"../../utils/styled":164,"../../components/data/LoadingOverlay":202,"../../components/data/LoadingOverlayInner":203,"../../components/data/LoadingSpinner":204,"polished":205}],152:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"../../components/layout/Page":149,"../../components/layout/Container":150,"../../store/users/actions":224,"../../utils/styled":151,"../../components/data/LoadingOverlay":204,"../../components/data/LoadingOverlayInner":205,"../../components/data/LoadingSpinner":206,"polished":223}],132:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22745,7 +22745,7 @@ var mapStateToProps = function mapStateToProps(_a) {
 // Now let's connect our component!
 // With redux v4's improved typings, we can finally omit generics here.
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(UsersPage);
-},{"react":14,"react-redux":117,"react-router-dom":155,"./users/index":169,"./users/show":170}],116:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"react-router-dom":135,"./users/index":152,"./users/show":153}],116:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22796,7 +22796,7 @@ var Routes = function Routes() {
         } })));
 };
 exports.default = Routes;
-},{"react":14,"react-router-dom":155,"./components/layout/Root":153,"./components/layout/Header":154,"./pages/index":150,"./pages/teams":151,"./pages/users":152}],248:[function(require,module,exports) {
+},{"react":16,"react-router-dom":135,"./components/layout/Root":133,"./components/layout/Header":134,"./pages/index":131,"./pages/teams":130,"./pages/users":132}],249:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22818,7 +22818,7 @@ var brandColors = {
     green: '#9ee79a'
 };
 exports.default = brandColors;
-},{}],189:[function(require,module,exports) {
+},{}],180:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22878,7 +22878,7 @@ var lightTheme = {
     }
 };
 exports.default = lightTheme;
-},{"../colors/brandColors":248,"polished":205}],190:[function(require,module,exports) {
+},{"../colors/brandColors":249,"polished":223}],181:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22938,7 +22938,7 @@ var lightTheme = {
     }
 };
 exports.default = lightTheme;
-},{"../colors/brandColors":248,"polished":205}],129:[function(require,module,exports) {
+},{"../colors/brandColors":249,"polished":223}],129:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22964,7 +22964,7 @@ Object.defineProperty(exports, 'light', {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./dark":189,"./light":190}],24:[function(require,module,exports) {
+},{"./dark":180,"./light":181}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23040,7 +23040,7 @@ var mapStateToProps = function mapStateToProps(_a) {
 // But since we pass some props from the `index.js` file, we have to include them.
 // For an example of a `connect` function without generics, see `./containers/LayoutContainer`.
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Main);
-},{"react":14,"react-redux":117,"connected-react-router":118,"emotion-theming":119,"./routes":116,"./styles/theme":129}],20:[function(require,module,exports) {
+},{"react":16,"react-redux":126,"connected-react-router":123,"emotion-theming":127,"./routes":116,"./styles/theme":129}],20:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23148,7 +23148,7 @@ function unregister() {
         });
     }
 }
-},{}],196:[function(require,module,exports) {
+},{}],198:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23459,7 +23459,7 @@ var cloneableGenerator = exports.cloneableGenerator = function cloneableGenerato
     };
   };
 };
-},{}],195:[function(require,module,exports) {
+},{}],197:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23569,7 +23569,7 @@ var buffers = exports.buffers = {
     return ringBuffer(initialSize, ON_OVERFLOW_EXPAND);
   }
 };
-},{"./utils":196}],256:[function(require,module,exports) {
+},{"./utils":198}],264:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23640,7 +23640,7 @@ function flush() {
     exec(task);
   }
 }
-},{}],194:[function(require,module,exports) {
+},{}],196:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23862,7 +23862,7 @@ function stdChannel(subscribe) {
     }
   });
 }
-},{"./utils":196,"./buffers":195,"./scheduler":256}],197:[function(require,module,exports) {
+},{"./utils":198,"./buffers":197,"./scheduler":264}],199:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24133,7 +24133,7 @@ var asEffect = exports.asEffect = {
   getContext: /*#__PURE__*/createAsEffectType(GET_CONTEXT),
   setContext: /*#__PURE__*/createAsEffectType(SET_CONTEXT)
 };
-},{"./utils":196}],207:[function(require,module,exports) {
+},{"./utils":198}],245:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24923,7 +24923,7 @@ function proc(iterator) {
     }, _defineEnumerableProperties(_ref9, _mutatorMap), _ref9;
   }
 }
-},{"./utils":196,"./scheduler":256,"./io":197,"./channel":194,"./buffers":195}],193:[function(require,module,exports) {
+},{"./utils":198,"./scheduler":264,"./io":199,"./channel":196,"./buffers":197}],195:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24991,7 +24991,7 @@ function runSaga(storeInterface, saga) {
 
   return task;
 }
-},{"./utils":196,"./proc":207}],192:[function(require,module,exports) {
+},{"./utils":198,"./proc":245}],194:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25086,7 +25086,7 @@ function sagaMiddlewareFactory() {
 
   return sagaMiddleware;
 }
-},{"./utils":196,"./channel":194,"./runSaga":193}],275:[function(require,module,exports) {
+},{"./utils":198,"./channel":196,"./runSaga":195}],281:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25145,7 +25145,7 @@ function fsmIterator(fsm, q0) {
     return next(null, error);
   }, name, true);
 }
-},{"../utils":196}],253:[function(require,module,exports) {
+},{"../utils":198}],261:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25187,7 +25187,7 @@ function takeEvery(patternOrChannel, worker) {
     }
   }, 'q1', 'takeEvery(' + (0, _fsmIterator.safeName)(patternOrChannel) + ', ' + worker.name + ')');
 }
-},{"./fsmIterator":275,"../io":197,"../channel":194}],254:[function(require,module,exports) {
+},{"./fsmIterator":281,"../io":199,"../channel":196}],262:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25239,7 +25239,7 @@ function takeLatest(patternOrChannel, worker) {
     }
   }, 'q1', 'takeLatest(' + (0, _fsmIterator.safeName)(patternOrChannel) + ', ' + worker.name + ')');
 }
-},{"./fsmIterator":275,"../io":197,"../channel":194}],255:[function(require,module,exports) {
+},{"./fsmIterator":281,"../io":199,"../channel":196}],263:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25300,7 +25300,7 @@ function throttle(delayLength, pattern, worker) {
     }
   }, 'q1', 'throttle(' + (0, _fsmIterator.safeName)(pattern) + ', ' + worker.name + ')');
 }
-},{"./fsmIterator":275,"../io":197,"../channel":194,"../buffers":195,"../utils":196}],198:[function(require,module,exports) {
+},{"./fsmIterator":281,"../io":199,"../channel":196,"../buffers":197,"../utils":198}],200:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25338,7 +25338,7 @@ exports.throttle = throttle;
 exports.takeEveryHelper = _takeEvery2.default;
 exports.takeLatestHelper = _takeLatest2.default;
 exports.throttleHelper = _throttle2.default;
-},{"./takeEvery":253,"./takeLatest":254,"./throttle":255,"../utils":196}],246:[function(require,module,exports) {
+},{"./takeEvery":261,"./takeLatest":262,"./throttle":263,"../utils":198}],209:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25375,7 +25375,7 @@ function throttle(ms, pattern, worker) {
 
   return _io.fork.apply(undefined, [_sagaHelpers.throttleHelper, ms, pattern, worker].concat(args));
 }
-},{"./io":197,"./sagaHelpers":198}],188:[function(require,module,exports) {
+},{"./io":199,"./sagaHelpers":200}],179:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25513,7 +25513,7 @@ Object.defineProperty(exports, 'throttle', {
     return _ioHelpers.throttle;
   }
 });
-},{"./internal/io":197,"./internal/io-helpers":246}],191:[function(require,module,exports) {
+},{"./internal/io":199,"./internal/io-helpers":209}],193:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25588,7 +25588,7 @@ Object.defineProperty(exports, 'CHANNEL_END', {
     return _proc.CHANNEL_END;
   }
 });
-},{"./internal/utils":196,"./internal/io":197,"./internal/proc":207}],121:[function(require,module,exports) {
+},{"./internal/utils":198,"./internal/io":199,"./internal/proc":245}],124:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25699,7 +25699,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _middleware2.default;
 exports.effects = effects;
 exports.utils = utils;
-},{"./internal/middleware":192,"./internal/runSaga":193,"./internal/channel":194,"./internal/buffers":195,"./internal/sagaHelpers":198,"./internal/utils":196,"./internal/io":197,"./effects":188,"./utils":191}],122:[function(require,module,exports) {
+},{"./internal/middleware":194,"./internal/runSaga":195,"./internal/channel":196,"./internal/buffers":197,"./internal/sagaHelpers":200,"./internal/utils":198,"./internal/io":199,"./effects":179,"./utils":193}],125:[function(require,module,exports) {
 "use strict";
 
 var compose = require('redux').compose;
@@ -25721,7 +25721,7 @@ exports.devToolsEnhancer = (
     function() { return function(noop) { return noop; } }
 );
 
-},{"redux":120}],241:[function(require,module,exports) {
+},{"redux":122}],231:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25768,7 +25768,7 @@ var reducer = function reducer(state, action) {
 // Instead of using default export, we use named exports. That way we can group these exports
 // inside the `index.js` folder.
 exports.layoutReducer = reducer;
-},{"./types":242}],187:[function(require,module,exports) {
+},{"./types":232}],178:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25810,7 +25810,7 @@ Object.keys(_types).forEach(function (key) {
     }
   });
 });
-},{"./actions":240,"./reducer":241,"./types":242}],224:[function(require,module,exports) {
+},{"./actions":230,"./reducer":231,"./types":232}],227:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25831,7 +25831,7 @@ var HeroesActionTypes = exports.HeroesActionTypes = undefined;
     HeroesActionTypes["SELECT_HERO"] = "@@heroes/SELECT_HERO";
     HeroesActionTypes["SELECTED"] = "@@heroes/SELECTED";
 })(HeroesActionTypes || (exports.HeroesActionTypes = HeroesActionTypes = {}));
-},{}],225:[function(require,module,exports) {
+},{}],228:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25857,7 +25857,7 @@ var fetchSuccess = exports.fetchSuccess = function fetchSuccess(data) {
 var fetchError = exports.fetchError = function fetchError(message) {
   return (0, _typesafeActions.action)(_types.HeroesActionTypes.FETCH_ERROR, message);
 };
-},{"typesafe-actions":257,"./types":224}],223:[function(require,module,exports) {
+},{"typesafe-actions":266,"./types":227}],226:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25876,7 +25876,7 @@ function callApi(method, url, path, data) {
         return res.json();
     });
 }
-},{}],178:[function(require,module,exports) {
+},{}],172:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26019,7 +26019,7 @@ function heroesSaga() {
     });
 }
 exports.default = heroesSaga;
-},{"redux-saga/effects":188,"./types":224,"./actions":225,"../../utils/callApi":223}],179:[function(require,module,exports) {
+},{"redux-saga/effects":179,"./types":227,"./actions":228,"../../utils/callApi":226}],173:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26076,7 +26076,7 @@ var reducer = function reducer(state, action) {
 // Instead of using default export, we use named exports. That way we can group these exports
 // inside the `index.js` folder.
 exports.heroesReducer = reducer;
-},{"./types":224}],181:[function(require,module,exports) {
+},{"./types":227}],174:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26273,7 +26273,7 @@ function heroesSaga() {
     });
 }
 exports.default = heroesSaga;
-},{"redux-saga/effects":188,"./types":243,"./actions":209,"../../utils/callApi":223}],180:[function(require,module,exports) {
+},{"redux-saga/effects":179,"./types":229,"./actions":208,"../../utils/callApi":226}],175:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26340,7 +26340,7 @@ var reducer = function reducer(state, action) {
 // Instead of using default export, we use named exports. That way we can group these exports
 // inside the `index.js` folder.
 exports.teamsReducer = reducer;
-},{"./types":243}],182:[function(require,module,exports) {
+},{"./types":229}],177:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26593,7 +26593,7 @@ function usersSaga() {
     });
 }
 exports.default = usersSaga;
-},{"redux-saga/effects":188,"./types":247,"./actions":206,"../../utils/callApi":223}],183:[function(require,module,exports) {
+},{"redux-saga/effects":179,"./types":241,"./actions":224,"../../utils/callApi":226}],176:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26669,7 +26669,7 @@ var reducer = function reducer(state, action) {
 // Instead of using default export, we use named exports. That way we can group these exports
 // inside the `index.js` folder.
 exports.usersReducer = reducer;
-},{"./types":247}],128:[function(require,module,exports) {
+},{"./types":241}],128:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26784,7 +26784,7 @@ function rootSaga() {
         }
     });
 }
-},{"redux":120,"redux-saga/effects":188,"./layout":187,"./heroes/sagas":178,"./heroes/reducer":179,"./teams/sagas":181,"./teams/reducer":180,"./users/sagas":182,"./users/reducers":183}],22:[function(require,module,exports) {
+},{"redux":122,"redux-saga/effects":179,"./layout":178,"./heroes/sagas":172,"./heroes/reducer":173,"./teams/sagas":174,"./teams/reducer":175,"./users/sagas":177,"./users/reducers":176}],22:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26824,9 +26824,9 @@ function configureStore(history, initialState) {
 
 // `react-router-redux` is deprecated, so we use `connected-react-router`.
 // This provides a Redux middleware which connects to our `react-router` instance.
-},{"redux":120,"redux-saga":121,"connected-react-router":118,"redux-devtools-extension":122,"./store":128}],18:[function(require,module,exports) {
+},{"redux":122,"redux-saga":124,"connected-react-router":123,"redux-devtools-extension":125,"./store":128}],18:[function(require,module,exports) {
 
-},{"./files\\ibm-plex-sans-latin-100.woff2":[["ibm-plex-sans-latin-100.227d8b7b.woff2",54],54],"./files\\ibm-plex-sans-latin-100.woff":[["ibm-plex-sans-latin-100.a1c8a4e4.woff",56],56],"./files\\ibm-plex-sans-latin-100italic.woff2":[["ibm-plex-sans-latin-100italic.81d02b02.woff2",58],58],"./files\\ibm-plex-sans-latin-100italic.woff":[["ibm-plex-sans-latin-100italic.a013a964.woff",60],60],"./files\\ibm-plex-sans-latin-200.woff2":[["ibm-plex-sans-latin-200.8b8f9c6e.woff2",62],62],"./files\\ibm-plex-sans-latin-200.woff":[["ibm-plex-sans-latin-200.76207dcf.woff",64],64],"./files\\ibm-plex-sans-latin-200italic.woff2":[["ibm-plex-sans-latin-200italic.dce9e8ac.woff2",66],66],"./files\\ibm-plex-sans-latin-200italic.woff":[["ibm-plex-sans-latin-200italic.380cd4d6.woff",68],68],"./files\\ibm-plex-sans-latin-300.woff2":[["ibm-plex-sans-latin-300.a46eba69.woff2",70],70],"./files\\ibm-plex-sans-latin-300.woff":[["ibm-plex-sans-latin-300.8cedddb2.woff",72],72],"./files\\ibm-plex-sans-latin-300italic.woff2":[["ibm-plex-sans-latin-300italic.7b0ee51a.woff2",74],74],"./files\\ibm-plex-sans-latin-300italic.woff":[["ibm-plex-sans-latin-300italic.c964d9b0.woff",76],76],"./files\\ibm-plex-sans-latin-400.woff2":[["ibm-plex-sans-latin-400.a6b454cd.woff2",78],78],"./files\\ibm-plex-sans-latin-400.woff":[["ibm-plex-sans-latin-400.c6c62846.woff",80],80],"./files\\ibm-plex-sans-latin-400italic.woff2":[["ibm-plex-sans-latin-400italic.5be3be49.woff2",82],82],"./files\\ibm-plex-sans-latin-400italic.woff":[["ibm-plex-sans-latin-400italic.218bc855.woff",84],84],"./files\\ibm-plex-sans-latin-500.woff2":[["ibm-plex-sans-latin-500.721b305b.woff2",86],86],"./files\\ibm-plex-sans-latin-500.woff":[["ibm-plex-sans-latin-500.32b6b96a.woff",88],88],"./files\\ibm-plex-sans-latin-500italic.woff2":[["ibm-plex-sans-latin-500italic.8d532466.woff2",90],90],"./files\\ibm-plex-sans-latin-500italic.woff":[["ibm-plex-sans-latin-500italic.e0dc1239.woff",92],92],"./files\\ibm-plex-sans-latin-600.woff2":[["ibm-plex-sans-latin-600.0fc5a8d4.woff2",94],94],"./files\\ibm-plex-sans-latin-600.woff":[["ibm-plex-sans-latin-600.b345a8f5.woff",96],96],"./files\\ibm-plex-sans-latin-600italic.woff2":[["ibm-plex-sans-latin-600italic.3e185dde.woff2",98],98],"./files\\ibm-plex-sans-latin-600italic.woff":[["ibm-plex-sans-latin-600italic.8c9a8fc3.woff",100],100],"./files\\ibm-plex-sans-latin-700.woff2":[["ibm-plex-sans-latin-700.705e7c6a.woff2",102],102],"./files\\ibm-plex-sans-latin-700.woff":[["ibm-plex-sans-latin-700.da57fde8.woff",104],104],"./files\\ibm-plex-sans-latin-700italic.woff2":[["ibm-plex-sans-latin-700italic.91e4458a.woff2",106],106],"./files\\ibm-plex-sans-latin-700italic.woff":[["ibm-plex-sans-latin-700italic.17fe47c0.woff",108],108]}],184:[function(require,module,exports) {
+},{"./files\\ibm-plex-sans-latin-100.woff2":[["ibm-plex-sans-latin-100.227d8b7b.woff2",54],54],"./files\\ibm-plex-sans-latin-100.woff":[["ibm-plex-sans-latin-100.a1c8a4e4.woff",56],56],"./files\\ibm-plex-sans-latin-100italic.woff2":[["ibm-plex-sans-latin-100italic.81d02b02.woff2",58],58],"./files\\ibm-plex-sans-latin-100italic.woff":[["ibm-plex-sans-latin-100italic.a013a964.woff",60],60],"./files\\ibm-plex-sans-latin-200.woff2":[["ibm-plex-sans-latin-200.8b8f9c6e.woff2",62],62],"./files\\ibm-plex-sans-latin-200.woff":[["ibm-plex-sans-latin-200.76207dcf.woff",64],64],"./files\\ibm-plex-sans-latin-200italic.woff2":[["ibm-plex-sans-latin-200italic.dce9e8ac.woff2",66],66],"./files\\ibm-plex-sans-latin-200italic.woff":[["ibm-plex-sans-latin-200italic.380cd4d6.woff",68],68],"./files\\ibm-plex-sans-latin-300.woff2":[["ibm-plex-sans-latin-300.a46eba69.woff2",70],70],"./files\\ibm-plex-sans-latin-300.woff":[["ibm-plex-sans-latin-300.8cedddb2.woff",72],72],"./files\\ibm-plex-sans-latin-300italic.woff2":[["ibm-plex-sans-latin-300italic.7b0ee51a.woff2",74],74],"./files\\ibm-plex-sans-latin-300italic.woff":[["ibm-plex-sans-latin-300italic.c964d9b0.woff",76],76],"./files\\ibm-plex-sans-latin-400.woff2":[["ibm-plex-sans-latin-400.a6b454cd.woff2",78],78],"./files\\ibm-plex-sans-latin-400.woff":[["ibm-plex-sans-latin-400.c6c62846.woff",80],80],"./files\\ibm-plex-sans-latin-400italic.woff2":[["ibm-plex-sans-latin-400italic.5be3be49.woff2",82],82],"./files\\ibm-plex-sans-latin-400italic.woff":[["ibm-plex-sans-latin-400italic.218bc855.woff",84],84],"./files\\ibm-plex-sans-latin-500.woff2":[["ibm-plex-sans-latin-500.721b305b.woff2",86],86],"./files\\ibm-plex-sans-latin-500.woff":[["ibm-plex-sans-latin-500.32b6b96a.woff",88],88],"./files\\ibm-plex-sans-latin-500italic.woff2":[["ibm-plex-sans-latin-500italic.8d532466.woff2",90],90],"./files\\ibm-plex-sans-latin-500italic.woff":[["ibm-plex-sans-latin-500italic.e0dc1239.woff",92],92],"./files\\ibm-plex-sans-latin-600.woff2":[["ibm-plex-sans-latin-600.0fc5a8d4.woff2",94],94],"./files\\ibm-plex-sans-latin-600.woff":[["ibm-plex-sans-latin-600.b345a8f5.woff",96],96],"./files\\ibm-plex-sans-latin-600italic.woff2":[["ibm-plex-sans-latin-600italic.3e185dde.woff2",98],98],"./files\\ibm-plex-sans-latin-600italic.woff":[["ibm-plex-sans-latin-600italic.8c9a8fc3.woff",100],100],"./files\\ibm-plex-sans-latin-700.woff2":[["ibm-plex-sans-latin-700.705e7c6a.woff2",102],102],"./files\\ibm-plex-sans-latin-700.woff":[["ibm-plex-sans-latin-700.da57fde8.woff",104],104],"./files\\ibm-plex-sans-latin-700italic.woff2":[["ibm-plex-sans-latin-700italic.91e4458a.woff2",106],106],"./files\\ibm-plex-sans-latin-700italic.woff":[["ibm-plex-sans-latin-700italic.17fe47c0.woff",108],108]}],187:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26846,7 +26846,7 @@ var __makeTemplateObject = undefined && undefined.__makeTemplateObject || functi
 exports.default = /*#__PURE__*/(0, _reactEmotion.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */\n\n  /* Document\n    ========================================================================== */\n\n  /**\n  * Use a better box model (opinionated).\n  */\n\n  html {\n    box-sizing: border-box;\n  }\n\n  *,\n  *::before,\n  *::after {\n    box-sizing: inherit;\n  }\n\n  /**\n  * Use a more readable tab size (opinionated).\n  */\n\n  :root {\n    -moz-tab-size: 4;\n    tab-size: 4;\n  }\n\n  /**\n  * Correct the line height in all browsers.\n  */\n\n  html {\n    line-height: 1.15;\n  }\n\n  /* Sections\n    ========================================================================== */\n\n  /**\n  * Remove the margin in all browsers.\n  */\n\n  body {\n    margin: 0;\n  }\n\n  /**\n  * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n  */\n\n  body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',\n      'Segoe UI Symbol';\n  }\n\n  /**\n  * Correct the font size and margin on `h1` elements within `section` and\n  * `article` contexts in Chrome, Firefox, and Safari.\n  */\n\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n\n  /* Grouping content\n    ========================================================================== */\n\n  /**\n  * Add the correct height in Firefox.\n  */\n\n  hr {\n    height: 0;\n  }\n\n  /* Text-level semantics\n    ========================================================================== */\n\n  /**\n  * Add the correct text decoration in Chrome, Edge, and Safari.\n  */\n\n  abbr[title] {\n    text-decoration: underline dotted;\n  }\n\n  /**\n  * Add the correct font weight in Chrome, Edge, and Safari.\n  */\n\n  b,\n  strong {\n    font-weight: bolder;\n  }\n\n  /**\n  * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n  * 2. Correct the odd `em` font sizing in all browsers.\n  */\n\n  code,\n  kbd,\n  samp,\n  pre {\n    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */\n    font-size: 1em; /* 2 */\n  }\n\n  /**\n  * Add the correct font size in all browsers.\n  */\n\n  small {\n    font-size: 80%;\n  }\n\n  /**\n  * Prevent `sub` and `sup` elements from affecting the line height in\n  * all browsers.\n  */\n\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n\n  sub {\n    bottom: -0.25em;\n  }\n\n  sup {\n    top: -0.5em;\n  }\n\n  /* Forms\n    ========================================================================== */\n\n  /**\n  * 1. Change the font styles in all browsers.\n  * 2. Remove the margin in Firefox and Safari.\n  */\n\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; /* 1 */\n    font-size: 100%; /* 1 */\n    line-height: 1.15; /* 1 */\n    margin: 0; /* 2 */\n  }\n\n  /**\n  * Remove the inheritance of text transform in Edge and Firefox.\n  * 1. Remove the inheritance of text transform in Firefox.\n  */\n\n  button,\n  select {\n    /* 1 */\n    text-transform: none;\n  }\n\n  /**\n  * Correct the inability to style clickable types in iOS and Safari.\n  */\n\n  button,\n  [type='button'],\n  [type='reset'],\n  [type='submit'] {\n    -webkit-appearance: button;\n  }\n\n  /**\n  * Remove the inner border and padding in Firefox.\n  */\n\n  button::-moz-focus-inner,\n  [type='button']::-moz-focus-inner,\n  [type='reset']::-moz-focus-inner,\n  [type='submit']::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n\n  /**\n  * Restore the focus styles unset by the previous rule.\n  */\n\n  button:-moz-focusring,\n  [type='button']:-moz-focusring,\n  [type='reset']:-moz-focusring,\n  [type='submit']:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n\n  /**\n  * Correct the padding in Firefox.\n  */\n\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n\n  /**\n  * Remove the padding so developers are not caught out when they zero out\n  *    `fieldset` elements in all browsers.\n  */\n\n  legend {\n    padding: 0;\n  }\n\n  /**\n  * Add the correct vertical alignment in Chrome and Firefox.\n  */\n\n  progress {\n    vertical-align: baseline;\n  }\n\n  /**\n  * Correct the cursor style of increment and decrement buttons in Chrome.\n  */\n\n  [type='number']::-webkit-inner-spin-button,\n  [type='number']::-webkit-outer-spin-button {\n    height: auto;\n  }\n\n  /**\n  * 1. Correct the odd appearance in Chrome and Safari.\n  * 2. Correct the outline style in Safari.\n  */\n\n  [type='search'] {\n    -webkit-appearance: textfield; /* 1 */\n    outline-offset: -2px; /* 2 */\n  }\n\n  /**\n  * Remove the inner padding in Chrome and Safari on macOS.\n  */\n\n  [type='search']::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n\n  /**\n  * 1. Correct the inability to style clickable types in iOS and Safari.\n  * 2. Change font properties to `inherit` in Safari.\n  */\n\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; /* 1 */\n    font: inherit; /* 2 */\n  }\n\n  /* Interactive\n    ========================================================================== */\n\n  /*\n  * Add the correct display in Edge and Firefox.\n  */\n\n  details {\n    display: block;\n  }\n\n  /*\n  * Add the correct display in all browsers.\n  */\n\n  summary {\n    display: list-item;\n  }\n"], ["\n  /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */\n\n  /* Document\n    ========================================================================== */\n\n  /**\n  * Use a better box model (opinionated).\n  */\n\n  html {\n    box-sizing: border-box;\n  }\n\n  *,\n  *::before,\n  *::after {\n    box-sizing: inherit;\n  }\n\n  /**\n  * Use a more readable tab size (opinionated).\n  */\n\n  :root {\n    -moz-tab-size: 4;\n    tab-size: 4;\n  }\n\n  /**\n  * Correct the line height in all browsers.\n  */\n\n  html {\n    line-height: 1.15;\n  }\n\n  /* Sections\n    ========================================================================== */\n\n  /**\n  * Remove the margin in all browsers.\n  */\n\n  body {\n    margin: 0;\n  }\n\n  /**\n  * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n  */\n\n  body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',\n      'Segoe UI Symbol';\n  }\n\n  /**\n  * Correct the font size and margin on \\`h1\\` elements within \\`section\\` and\n  * \\`article\\` contexts in Chrome, Firefox, and Safari.\n  */\n\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n\n  /* Grouping content\n    ========================================================================== */\n\n  /**\n  * Add the correct height in Firefox.\n  */\n\n  hr {\n    height: 0;\n  }\n\n  /* Text-level semantics\n    ========================================================================== */\n\n  /**\n  * Add the correct text decoration in Chrome, Edge, and Safari.\n  */\n\n  abbr[title] {\n    text-decoration: underline dotted;\n  }\n\n  /**\n  * Add the correct font weight in Chrome, Edge, and Safari.\n  */\n\n  b,\n  strong {\n    font-weight: bolder;\n  }\n\n  /**\n  * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n  * 2. Correct the odd \\`em\\` font sizing in all browsers.\n  */\n\n  code,\n  kbd,\n  samp,\n  pre {\n    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */\n    font-size: 1em; /* 2 */\n  }\n\n  /**\n  * Add the correct font size in all browsers.\n  */\n\n  small {\n    font-size: 80%;\n  }\n\n  /**\n  * Prevent \\`sub\\` and \\`sup\\` elements from affecting the line height in\n  * all browsers.\n  */\n\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n\n  sub {\n    bottom: -0.25em;\n  }\n\n  sup {\n    top: -0.5em;\n  }\n\n  /* Forms\n    ========================================================================== */\n\n  /**\n  * 1. Change the font styles in all browsers.\n  * 2. Remove the margin in Firefox and Safari.\n  */\n\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; /* 1 */\n    font-size: 100%; /* 1 */\n    line-height: 1.15; /* 1 */\n    margin: 0; /* 2 */\n  }\n\n  /**\n  * Remove the inheritance of text transform in Edge and Firefox.\n  * 1. Remove the inheritance of text transform in Firefox.\n  */\n\n  button,\n  select {\n    /* 1 */\n    text-transform: none;\n  }\n\n  /**\n  * Correct the inability to style clickable types in iOS and Safari.\n  */\n\n  button,\n  [type='button'],\n  [type='reset'],\n  [type='submit'] {\n    -webkit-appearance: button;\n  }\n\n  /**\n  * Remove the inner border and padding in Firefox.\n  */\n\n  button::-moz-focus-inner,\n  [type='button']::-moz-focus-inner,\n  [type='reset']::-moz-focus-inner,\n  [type='submit']::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n\n  /**\n  * Restore the focus styles unset by the previous rule.\n  */\n\n  button:-moz-focusring,\n  [type='button']:-moz-focusring,\n  [type='reset']:-moz-focusring,\n  [type='submit']:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n\n  /**\n  * Correct the padding in Firefox.\n  */\n\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n\n  /**\n  * Remove the padding so developers are not caught out when they zero out\n  *    \\`fieldset\\` elements in all browsers.\n  */\n\n  legend {\n    padding: 0;\n  }\n\n  /**\n  * Add the correct vertical alignment in Chrome and Firefox.\n  */\n\n  progress {\n    vertical-align: baseline;\n  }\n\n  /**\n  * Correct the cursor style of increment and decrement buttons in Chrome.\n  */\n\n  [type='number']::-webkit-inner-spin-button,\n  [type='number']::-webkit-outer-spin-button {\n    height: auto;\n  }\n\n  /**\n  * 1. Correct the odd appearance in Chrome and Safari.\n  * 2. Correct the outline style in Safari.\n  */\n\n  [type='search'] {\n    -webkit-appearance: textfield; /* 1 */\n    outline-offset: -2px; /* 2 */\n  }\n\n  /**\n  * Remove the inner padding in Chrome and Safari on macOS.\n  */\n\n  [type='search']::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n\n  /**\n  * 1. Correct the inability to style clickable types in iOS and Safari.\n  * 2. Change font properties to \\`inherit\\` in Safari.\n  */\n\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; /* 1 */\n    font: inherit; /* 2 */\n  }\n\n  /* Interactive\n    ========================================================================== */\n\n  /*\n  * Add the correct display in Edge and Firefox.\n  */\n\n  details {\n    display: block;\n  }\n\n  /*\n  * Add the correct display in all browsers.\n  */\n\n  summary {\n    display: list-item;\n  }\n"])));
 
 var templateObject_1;
-},{"react-emotion":186}],185:[function(require,module,exports) {
+},{"react-emotion":189}],188:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26866,7 +26866,7 @@ var __makeTemplateObject = undefined && undefined.__makeTemplateObject || functi
 exports.default = /*#__PURE__*/(0, _reactEmotion.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  body {\n    width: 100%;\n    overflow-x: hidden;\n    overflow-y: scroll;\n  }\n\n  a {\n    color: inherit;\n    text-decoration: none;\n\n    &:hover,\n    &:focus {\n      text-decoration: underline;\n    }\n  }\n\n  img {\n    max-width: 100%;\n    position: relative;\n    vertical-align: middle;\n  }\n\n  figure {\n    margin: 2rem 0;\n  }\n\n  figcaption {\n    font-size: 80%;\n  }\n\n  table {\n    width: 100%;\n    font-size: 85%;\n    border-collapse: collapse;\n  }\n"], ["\n  body {\n    width: 100%;\n    overflow-x: hidden;\n    overflow-y: scroll;\n  }\n\n  a {\n    color: inherit;\n    text-decoration: none;\n\n    &:hover,\n    &:focus {\n      text-decoration: underline;\n    }\n  }\n\n  img {\n    max-width: 100%;\n    position: relative;\n    vertical-align: middle;\n  }\n\n  figure {\n    margin: 2rem 0;\n  }\n\n  figcaption {\n    font-size: 80%;\n  }\n\n  table {\n    width: 100%;\n    font-size: 85%;\n    border-collapse: collapse;\n  }\n"])));
 
 var templateObject_1;
-},{"react-emotion":186}],115:[function(require,module,exports) {
+},{"react-emotion":189}],115:[function(require,module,exports) {
 'use strict';
 
 var _reactEmotion = require('react-emotion');
@@ -26893,7 +26893,7 @@ var __makeTemplateObject = undefined && undefined.__makeTemplateObject || functi
 // tslint:disable-next-line:no-unused-expression
 (0, _reactEmotion.injectGlobal)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n"])), _normalize2.default, _globals2.default);
 var templateObject_1;
-},{"react-emotion":186,"./normalize":184,"./globals":185}],10:[function(require,module,exports) {
+},{"react-emotion":189,"./normalize":187,"./globals":188}],10:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -26945,5 +26945,5 @@ ReactDOM.render(React.createElement(_main2.default, { store: store, history: his
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
-},{"react":14,"react-dom":12,"history":16,"./main":24,"./serviceWorker":20,"./configureStore":22,"typeface-ibm-plex-sans":18,"./styles":115}]},{},[10], null)
+},{"react":16,"react-dom":12,"history":14,"./main":24,"./serviceWorker":20,"./configureStore":22,"typeface-ibm-plex-sans":18,"./styles":115}]},{},[10], null)
 //# sourceMappingURL=/src.66c919a8.map
