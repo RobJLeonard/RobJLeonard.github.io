@@ -1,3 +1,17 @@
+.Axis path,
+.Axis line {
+  stroke: #E0E0E0;
+}
+
+.Axis text {
+  font-size: 11px;
+  fill: black;
+}
+
+.Axis-Bottom text {
+  transform: rotate(-45deg);
+  text-anchor: end;
+}
 /* ibm-plex-sans-100normal - latin */
 @font-face {
   font-family: 'IBM Plex Sans';
